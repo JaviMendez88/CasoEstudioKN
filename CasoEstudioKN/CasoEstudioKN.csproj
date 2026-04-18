@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CasasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="EntityFramework\CasasSistema.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -142,10 +143,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AlquileresModelo.cs" />
+    <Compile Include="Models\ConsultasModelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\styles.css" />
     <Content Include="Assets\favicon.ico" />
+    <Content Include="Assets\js\scripts.js" />
     <Content Include="Assets\profile.png" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -211,16 +216,13 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutExterno.cshtml" />
+    <Content Include="Views\Home\Consultas.cshtml" />
+    <Content Include="Views\Home\Alquileres.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\css\" />
-    <Folder Include="Assets\js\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
