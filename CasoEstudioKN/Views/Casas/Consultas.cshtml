@@ -1,0 +1,58 @@
+﻿@model List<CasoEstudioKN.Models.ConsultasModelo>
+
+@{
+    ViewBag.Title = "Consulta de Casas";
+    Layout = "~/Views/Shared/_LayoutExterno.cshtml";
+}
+
+<div class="container px-5 my-5">
+    <h2 class="fw-bolder mb-4">Consulta de Casas</h2>
+
+    <p class="text-muted">
+        En esta sección se mostrarán las casas disponibles y alquiladas,
+        filtradas por rango de precios y ordenadas por estado.
+    </p>
+
+    <!-- Tabla de resultados de consulta -->
+</div>
+    <div class="container px-5 my-5">
+    <h2 class="fw-bolder mb-4">Consulta de Casas</h2>
+
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>Descripción</th>
+                <th>Precio Mensual</th>
+                <th>Usuario</th>
+                <th>Estado</th>
+                <th>Fecha Alquiler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var casa in Model)
+            {
+                <tr>
+                    <td>@casa.DescripcionCasa</td>
+                    <td class="text-end">@casa.PrecioCasa.ToString("₡#,##0.00")</td>
+                    <td>@(casa.UsuarioAlquiler ?? "—")</td>
+                    <td class="text-center">
+                        @if (casa.Estado == "Disponible")
+                        {
+                            <span class="badge bg-success">Disponible</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Reservada</span>
+                        }
+                    </td>
+                    <td class="text-center">
+                        @(casa.FechaAlquiler.HasValue
+                            ? casa.FechaAlquiler.Value.ToString("dd/MM/yyyy")
+                            : "—")
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

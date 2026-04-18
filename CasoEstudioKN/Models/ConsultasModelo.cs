@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
 namespace CasoEstudioKN.Models
 {
     public class ConsultasModelo
@@ -13,6 +12,7 @@ namespace CasoEstudioKN.Models
         public string UsuarioAlquiler { get; set; }
         public DateTime? FechaAlquiler { get; set; }
 
+        // Add In, no existe en la BD
         public string Estado
         {
             get
@@ -22,6 +22,5 @@ namespace CasoEstudioKN.Models
                     : "Reservada";
             }
         }
-
     }
 }

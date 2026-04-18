@@ -1,0 +1,45 @@
+﻿@model CasoEstudioKN.Models.AlquileresModelo
+
+@{
+    ViewBag.Title = "Alquiler de Casas";
+    Layout = "~/Views/Shared/_LayoutExterno.cshtml";
+}
+
+<div class="container px-5 my-5">
+    <h2 class="fw-bolder mb-4">Alquiler de Casas</h2>
+
+    @using (Html.BeginForm("Alquilar", "Casas", FormMethod.Post))
+    {
+        <div class="mb-3">
+            <label>Casa</label>
+            @Html.DropDownListFor(m => m.IdCasa, ViewBag.Casas as SelectList,
+                "-- Seleccione una casa --",
+                new { @class = "form-control", id = "ddlCasa" })
+            @Html.ValidationMessageFor(m => m.IdCasa, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="mb-3">
+            <label>Precio mensual</label>
+            @Html.TextBoxFor(m => m.PrecioCasa,
+                new { @class = "form-control", @readonly = "readonly", id = "txtPrecio" })
+        </div>
+
+        <div class="mb-3">
+            <label>Usuario</label>
+            @Html.TextBoxFor(m => m.UsuarioAlquiler,
+                new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.UsuarioAlquiler, "", new { @class = "text-danger" })
+        </div>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <button type="submit" class="btn btn-primary">Alquilar</button>
+    }
+</div>
+
+<script>
+    var urlObtenerPrecio = '@Url.Action("ObtenerPrecio", "Casas")';
+</script>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/Assets/js/Alquileres.js"></script>
+}

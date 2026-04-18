@@ -150,6 +150,7 @@
   <ItemGroup>
     <Content Include="Assets\css\styles.css" />
     <Content Include="Assets\favicon.ico" />
+    <Content Include="Assets\js\Alquileres.js" />
     <Content Include="Assets\js\scripts.js" />
     <Content Include="Assets\profile.png" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -218,8 +219,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutExterno.cshtml" />
-    <Content Include="Views\Home\Consultas.cshtml" />
-    <Content Include="Views\Home\Alquileres.cshtml" />
+    <Content Include="Views\Casas\Consultas.cshtml" />
+    <Content Include="Views\Casas\Alquileres.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

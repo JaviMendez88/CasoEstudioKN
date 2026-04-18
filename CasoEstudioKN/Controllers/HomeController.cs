@@ -13,14 +13,14 @@ namespace CasoEstudioKN.Controllers
             return View();
         }
 
-        public ActionResult Consultas()
-        {
-            return View();
-        }
+        //public ActionResult Consultas()
+        //{
+        //    return View();
+        //}
 
-        public ActionResult Alquileres()
-        {
-            return View();
-        }
+        //public ActionResult Alquileres()
+        //{
+        //    return View();
+        //}
     }
 }
