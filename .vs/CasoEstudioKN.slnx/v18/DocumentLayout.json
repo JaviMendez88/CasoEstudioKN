@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\jabad\\source\\repos\\CasoEstudioKN\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F97CEA1F-2C65-4BBB-8D72-A09A054C469E}|CasoEstudioKN\\CasoEstudioKN.csproj|c:\\users\\jabad\\source\\repos\\casoestudiokn\\casoestudiokn\\entityframework\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{F97CEA1F-2C65-4BBB-8D72-A09A054C469E}|CasoEstudioKN\\CasoEstudioKN.csproj|solutionrelative:casoestudiokn\\entityframework\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{F97CEA1F-2C65-4BBB-8D72-A09A054C469E}|CasoEstudioKN\\CasoEstudioKN.csproj|c:\\users\\jabad\\source\\repos\\casoestudiokn\\casoestudiokn\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F97CEA1F-2C65-4BBB-8D72-A09A054C469E}|CasoEstudioKN\\CasoEstudioKN.csproj|solutionrelative:casoestudiokn\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +27,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Model1.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\jabad\\source\\repos\\CasoEstudioKN\\CasoEstudioKN\\EntityFramework\\Model1.edmx",
-              "RelativeDocumentMoniker": "CasoEstudioKN\\EntityFramework\\Model1.edmx",
-              "ToolTip": "C:\\Users\\jabad\\source\\repos\\CasoEstudioKN\\CasoEstudioKN\\EntityFramework\\Model1.edmx [Diagram1]",
-              "RelativeToolTip": "CasoEstudioKN\\EntityFramework\\Model1.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2026-04-18T17:37:17.111Z",
-              "EditorCaption": " [Diagram1]"
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\jabad\\source\\repos\\CasoEstudioKN\\CasoEstudioKN\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CasoEstudioKN\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\jabad\\source\\repos\\CasoEstudioKN\\CasoEstudioKN\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CasoEstudioKN\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-18T17:41:03.454Z",
+              "EditorCaption": ""
             }
           ]
         }
