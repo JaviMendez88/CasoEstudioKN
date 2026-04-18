@@ -36,23 +36,6 @@ namespace CasoEstudioKN.Controllers
 
         #region Alquileres
 
-        //public ActionResult Alquileres()
-        //{
-        //    var casasDisponibles = db.CasasSistema
-        //        .Where(c => c.UsuarioAlquiler == null)
-        //        .Select(c => new
-        //        {
-        //            c.IdCasa,
-        //            c.DescripcionCasa,
-        //            c.PrecioCasa
-        //        })
-        //        .ToList();
-
-        //    ViewBag.Casas = new SelectList(casasDisponibles, "IdCasa", "DescripcionCasa");
-
-        //    return View();
-        //}
-
         public ActionResult Alquileres()
         {
             CargarCasasDisponibles();
@@ -82,8 +65,6 @@ namespace CasoEstudioKN.Controllers
 
             ViewBag.Casas = new SelectList(casas, "IdCasa", "DescripcionCasa");
         }
-
-
 
 
         [HttpPost]

@@ -19,3 +19,22 @@ CREATE TABLE CasasSistema (
     FechaAlquiler DATETIME NULL,
     CONSTRAINT PK_CasasSistema PRIMARY KEY (IdCasa)
 );
+
+
+-- Agregado de valores predefinidos por el profe
+
+INSERT INTO [dbo].[CasasSistema] ([DescripcionCasa],[PrecioCasa],[UsuarioAlquiler],[FechaAlquiler])
+VALUES ('Casa en San José',190000,null,null)
+INSERT INTO [dbo].[CasasSistema] ([DescripcionCasa],[PrecioCasa],[UsuarioAlquiler],[FechaAlquiler])
+VALUES ('Casa en Alajuela',145000,null,null)
+INSERT INTO [dbo].[CasasSistema] ([DescripcionCasa],[PrecioCasa],[UsuarioAlquiler],[FechaAlquiler])
+VALUES ('Casa en Cartago',115000,null,null)
+INSERT INTO [dbo].[CasasSistema] ([DescripcionCasa],[PrecioCasa],[UsuarioAlquiler],[FechaAlquiler])
+VALUES ('Casa en Heredia',122000,null,null)
+INSERT INTO [dbo].[CasasSistema] ([DescripcionCasa],[PrecioCasa],[UsuarioAlquiler],[FechaAlquiler])
+VALUES ('Casa en Guanacaste',105000,null,null)
+
+
+-- Consultas
+
+SELECT * FROM CasasSistema;
