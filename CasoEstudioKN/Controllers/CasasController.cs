@@ -1,13 +1,13 @@
-﻿using CasoEstudioKN.EntityFramework;
-using CasoEstudioKN.Models;
+﻿using CasoEstudio2.EntityFramework;
+using CasoEstudio2.Models;
 using System;
 using System.Linq;
 using System.Web.Mvc;
-namespace CasoEstudioKN.Controllers
+namespace CasoEstudio2.Controllers
 {
     public class CasasController : Controller
     {
-        private CasoEstudioKNEntities db = new CasoEstudioKNEntities();
+        private CasoEstudio2Entities db = new CasoEstudio2Entities();
 
 
         #region Consultas
@@ -18,7 +18,7 @@ namespace CasoEstudioKN.Controllers
 
                 .OrderBy(c => c.UsuarioAlquiler == null ? 0 : 1)
 
-                .Select(c => new ConsultasModelo
+                .Select(c => new CasasModel
                 {
                     IdCasa = c.IdCasa,
                     DescripcionCasa = c.DescripcionCasa,
@@ -39,7 +39,7 @@ namespace CasoEstudioKN.Controllers
         public ActionResult Alquileres()
         {
             CargarCasasDisponibles();
-            return View(new AlquileresModelo());
+            return View(new CasasModel());
         }
 
 
@@ -68,7 +68,7 @@ namespace CasoEstudioKN.Controllers
 
 
         [HttpPost]
-        public ActionResult Alquilar(AlquileresModelo model)
+        public ActionResult Alquilar(CasasModel model)
         {
             if (!ModelState.IsValid)
             {

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CasoEstudioKNModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="CasoEstudio2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CasasSistema">
           <Key>
             <PropertyRef Name="IdCasa" />
@@ -15,14 +15,14 @@
           <Property Name="UsuarioAlquiler" Type="varchar" MaxLength="30" />
           <Property Name="FechaAlquiler" Type="datetime" />
         </EntityType>
-        <EntityContainer Name="CasoEstudioKNModelStoreContainer">
+        <EntityContainer Name="CasoEstudio2ModelStoreContainer">
           <EntitySet Name="CasasSistema" EntityType="Self.CasasSistema" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="CasoEstudioKNModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="CasoEstudio2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="CasasSistema">
           <Key>
             <PropertyRef Name="IdCasa" />
@@ -33,7 +33,7 @@
           <Property Name="UsuarioAlquiler" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="FechaAlquiler" Type="DateTime" Precision="3" />
         </EntityType>
-        <EntityContainer Name="CasoEstudioKNEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CasoEstudio2Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CasasSistema" EntityType="Self.CasasSistema" />
         </EntityContainer>
       </Schema>
@@ -41,9 +41,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CasoEstudioKNModelStoreContainer" CdmEntityContainer="CasoEstudioKNEntities">
+        <EntityContainerMapping StorageEntityContainer="CasoEstudio2ModelStoreContainer" CdmEntityContainer="CasoEstudio2Entities">
           <EntitySetMapping Name="CasasSistema">
-            <EntityTypeMapping TypeName="CasoEstudioKNModel.CasasSistema">
+            <EntityTypeMapping TypeName="CasoEstudio2Model.CasasSistema">
               <MappingFragment StoreEntitySet="CasasSistema">
                 <ScalarProperty Name="IdCasa" ColumnName="IdCasa" />
                 <ScalarProperty Name="DescripcionCasa" ColumnName="DescripcionCasa" />

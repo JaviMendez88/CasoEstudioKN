@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace CasoEstudioKN
+namespace CasoEstudio2
 {
     public class BundleConfig
     {
